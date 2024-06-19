@@ -1,0 +1,62 @@
+body{
+    background-color: cornflowerblue;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    gap: 5vw;
+}
+
+
+.labels{
+    display: flex;
+    gap: 7vw;
+    font-size: 2rem;
+}
+
+.game{
+    display: flex;
+    gap: 7vw;
+    margin-left: 7vw;
+}
+
+.user{
+    display: flex;
+    margin-left: 5vw;
+}
+
+.comp{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.hidden1{
+    display: none;
+}
+
+.hidden{
+    visibility:hidden;
+}
+
+
+
+@keyframes colorChange {
+    0% {
+        color: yellow;
+    }
+    50%{
+        color: orange;
+    }
+    100%{
+        color: red;
+    }
+}
+
+.msg {
+    font-weight: bold;
+    animation: colorChange 5s linear infinite; 
+}
